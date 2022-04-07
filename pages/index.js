@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,9 +13,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <a href="https://nextjs.org">Twitter Clone</a>
+          <Link href="https://nextjs.org">Twitter Clone</Link>
         </h1>
-        <a href="/timeline">Tweet</a>
+        <nav>
+          <Link href="/timeline">Tweet</Link>
+        </nav>
       </main>
     </div>
   );
